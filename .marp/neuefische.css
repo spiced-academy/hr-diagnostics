@@ -1,0 +1,425 @@
+:root {
+  --color-granite: #252629;
+  --color-nemo: #ff4a11;
+  --color-white: #ffffff;
+  --background-pattern-egg-gray: url("/.marp/assets/images/background_pattern_egg_gray.svg");
+  --logo_fisch_nemo: url("/.marp/assets/images/logo_fisch_nemo.svg");
+  --logo_fisch_white: url("/.marp/assets/images/logo_fisch_white.svg");
+  --logo_neuefische_granite: url("/.marp/assets/images/logo_neuefische_granite.svg");
+  --logo_neuefische_nemo: url("/.marp/assets/images/logo_neuefische_nemo.svg");
+  --logo_neuefische_white: url("/.marp/assets/images/logo_neuefische_white.svg");
+  --pfeil_granite: url("/.marp/assets/images/pfeil_granite.svg");
+  --pfeil_white: url("/.marp/assets/images/pfeil_white.svg");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/.marp/assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+    format("f");
+}
+
+section {
+  background: var(--color-white);
+  color: var(--color-granite);
+  font-family: "Inter", sans-serif;
+  font-size: 34pt;
+  padding: 10px 65px 65px 65px;
+}
+
+section h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+
+section ol,
+section ul {
+  font-family: "Inter", sans-serif;
+  color: var(--color-granite);
+  line-height: 1.5em;
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+section strong,
+section em {
+  color: var(--color-nemo);
+  font-style: normal;
+}
+
+section a {
+  color: var(--color-nemo);
+  text-decoration: none;
+}
+
+section a:after {
+  content: " 🔗";
+  color: transparent;
+  text-shadow: 0 0 var(--color-nemo);
+  font-size: 0.5em;
+  position: relative;
+  bottom: 0.2em;
+}
+
+section.big-headline {
+  padding: 65px;
+}
+
+section.big-headline p,
+section.big-headline h1,
+section.big-headline h2,
+section.big-headline h3,
+section.big-headline h4,
+section.big-headline h5,
+section.big-headline h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 90pt;
+  vertical-align: bottom;
+  line-height: 1.1em;
+}
+
+section.big-headline::before {
+  content: var(--logo_fisch_white);
+  position: fixed;
+  right: 65px;
+  bottom: 65px;
+}
+
+section.big-headline.granite,
+section.big-headline.nemo {
+  color: var(--color-white);
+}
+
+section.big-headline.granite::before,
+section.big-headline.nemo::before {
+  content: var(--logo_fisch_white);
+}
+
+section.big-headline.arrow::before {
+  content: var(--pfeil_white);
+}
+
+section.big-headline.granite {
+  background: var(--color-granite);
+}
+
+section.big-headline.nemo {
+  background: var(--color-nemo);
+}
+
+section.intro-slide {
+  padding: 65px;
+}
+
+section.intro-slide p,
+section.intro-slide h1,
+section.intro-slide h2,
+section.intro-slide h3,
+section.intro-slide h4,
+section.intro-slide h5,
+section.intro-slide h6 {
+  padding: 0 20px 0 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.5em;
+  vertical-align: bottom;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  line-height: 1em;
+  width: calc(100% - 65px);
+}
+
+section.intro-slide::before {
+  content: var(--logo_neuefische_nemo);
+  position: fixed;
+  right: 65px;
+  top: 65px;
+}
+
+section.intro-slide p::after,
+section.intro-slide h1::after,
+section.intro-slide h2::after,
+section.intro-slide h3::after,
+section.intro-slide h4::after,
+section.intro-slide h5::after,
+section.intro-slide h6::after {
+  content: var(--pfeil_granite);
+  float: right;
+  position: relative;
+  top: -40px;
+  transform: scale(0.7);
+}
+
+section.intro-slide.granite,
+section.intro-slide.nemo {
+  color: var(--color-white);
+}
+
+section.intro-slide.granite {
+  background: var(--color-granite);
+}
+
+section.intro-slide.nemo {
+  background: var(--color-nemo);
+}
+
+section.intro-slide.granite::before,
+section.intro-slide.nemo::before {
+  content: var(--logo_neuefische_white);
+}
+
+section.intro-slide.granite p::after,
+section.intro-slide.granite h1::after,
+section.intro-slide.granite h2::after,
+section.intro-slide.granite h3::after,
+section.intro-slide.granite h4::after,
+section.intro-slide.granite h5::after,
+section.intro-slide.granite h6::after,
+section.intro-slide.nemo p::after,
+section.intro-slide.nemo h1::after,
+section.intro-slide.nemo h2::after,
+section.intro-slide.nemo h3::after,
+section.intro-slide.nemo h4::after,
+section.intro-slide.nemo h5::after,
+section.intro-slide.nemo h6::after {
+  content: var(--pfeil_white);
+}
+
+section.image-profile img {
+  position: fixed;
+  /* according to google slides template 1066px * 1600px is preferred image ratio */
+  left: 120px;
+  top: 70px;
+  max-height: 550px;
+  max-width: 400px;
+}
+
+section.image-profile {
+  background-image: var(--background-pattern-egg-gray);
+  background-size: 600px 600px;
+  background-position: 20px 70px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+section.image-profile h1,
+section.image-profile h2,
+section.image-profile h3,
+section.image-profile h4,
+section.image-profile h5,
+section.image-profile h6 {
+  margin-top: 70px;
+  margin-left: 570px;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+section.image-profile p {
+  margin-left: 570px;
+}
+
+section.image-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.image-center p {
+  display: flex;
+  justify-content: center;
+}
+
+section.image-center::before {
+  content: var(--logo_fisch_nemo);
+  position: fixed;
+  right: 65px;
+  bottom: 65px;
+}
+
+section.extra-small {
+  font-size: 1.5em;
+}
+
+section.smaller {
+  font-size: 1.5em;
+}
+
+section.small {
+  font-size: 2em;
+}
+
+section.scrum img {
+  max-height: 500px;
+  max-width: 1100px;
+  position: fixed;
+  /* according to google slides template 1066px * 1600px is preferred image ratio */
+  left: 170px;
+  top: 100px;
+}
+
+section.hsplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-column-gap: 1em;
+}
+
+section.hsplit h1,
+h2 {
+  grid-column: span 2;
+}
+
+section.code-small pre {
+  font-size: 0.2rem;
+}
+
+section.neutral-list ul {
+  /* list-style: none; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+section.quote {
+  padding-inline: 120px;
+  font-size: 4rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+section.quote p {
+  z-index: 1;
+  padding-top: 150px;
+}
+
+section.quote::before {
+  content: ">>";
+  position: fixed;
+  font-weight: bold;
+  font-size: 24rem;
+  top: 30px;
+  letter-spacing: -50px;
+  left: 65px;
+  z-index: 0;
+  color: #ccc;
+}
+
+pre {
+  border: solid 1px #ccc;
+  box-shadow: #888 10px 10px 10px;
+  overflow: auto;
+  background: #444;
+  color: #a9b7c6;
+  margin: -5px -15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  align-self: start;
+  font-size: 0.3rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border-bottom: #0a0e12 solid 1px;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: #0a0e12 solid 1px;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+/*HIGHLIGHT.js android-studio-theme*/
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+code.hljs {
+  padding: 3px 5px;
+}
+
+.hljs {
+  color: #a9b7c6;
+  background: #282b2e;
+}
+
+.hljs-bullet,
+.hljs-literal,
+.hljs-number,
+.hljs-symbol {
+  color: #6897bb;
+}
+
+.hljs-deletion,
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #cc7832;
+}
+
+.hljs-link,
+.hljs-template-variable,
+.hljs-variable {
+  color: #629755;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: grey;
+}
+
+.hljs-meta {
+  color: #bbb529;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-string {
+  color: #6a8759;
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-type {
+  color: #ffc66d;
+}
+
+.hljs-name,
+.hljs-selector-class,
+.hljs-selector-id {
+  color: #e8bf6a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
+
+section.big-headline.headline-small p {
+  font-size: 50pt;
+  line-height: 150%;
+}

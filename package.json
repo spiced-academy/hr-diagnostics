@@ -1,0 +1,55 @@
+{
+  "name": "web-curriculum-new-format",
+  "version": "1.0.0",
+  "description": "This is the working progress of the new curriculum of the bootcamp Web Development. <br> This update is aiming to improve the way our students learn. <br>",
+  "main": "n.a.",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-session": "node scripts/create-session.js",
+    "prepare": "husky install",
+    "start": "marp --server --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spicedacademy/fs-new-syllabus.git"
+  },
+  "author": "Thomas Földi",
+  "contributors": [
+    "CJ Akkuec",
+    "Paul Reichetanz",
+    "Alex Claes",
+    "Jan Willem Henckel",
+    "Felix Kirchhoff",
+    "Merle Makoben",
+    "Marc Bendixen",
+    "Gregor Adams"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/spicedacademy/fs-new-syllabus/issues"
+  },
+  "homepage": "https://github.com/spicedacademy/fs-new-syllabus#readme",
+  "dependencies": {
+    "husky": "^8.0.1"
+  },
+  "lint-staged": {
+    "*.md": [
+      "npx prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^2.2.2",
+    "branch-name": "^1.0.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.1.0",
+    "slugify": "^1.6.5",
+    "title-case": "^3.0.3"
+  },
+  "marp": {
+    "theme": "./.marp/neuefische.css",
+    "inputDir": ".",
+    "output": ".",
+    "html": true
+  }
+}
