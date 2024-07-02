@@ -1,0 +1,10 @@
+{
+    "name": "css-basics_personal-website-solution",
+    "version": "0.0.0-unreleased",
+    "description": "CSS Basics: Personal Website",
+    "main": "n.a.",
+    "nf": {
+        "template": "empty"
+    },
+    "private": true
+}

@@ -1,0 +1,128 @@
+/* ---------------------------------------------------------
+                Styling for mobile version
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+body {
+  background-color: white;
+  text-align: justify;
+}
+
+main {
+  padding: 5px 20px;
+}
+
+section {
+  margin: 50px 0;
+}
+
+
+/* ---------------------------------------------
+                  Header Section
+  ---------------------------------------------- */
+header {
+  padding: 10px;
+}
+
+header nav {
+  padding: 5px 0;
+}
+
+header a {
+  margin-right: 20px;
+}
+
+/* ---------------------------------------------
+                  Profile Section
+  ---------------------------------------------- */
+
+.profile {
+  margin: 10px;
+}
+
+.profile img {
+  width: 250px;
+}
+
+.profile ol {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.profile li {
+  display: inline;
+  margin: 10px;
+}
+
+
+
+/* ---------------------------------------------
+                  Contact Section
+  ---------------------------------------------- */
+
+#contact {
+  border: 5px double darkcyan;
+  padding: 5px 20px;
+}
+
+
+/* ---------------------------------------------
+                  Social Media Section
+  ---------------------------------------------- */
+.social-media a {
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.social-media figure {
+  border: 2px solid darkcyan;
+
+}
+
+.social-media img {
+  width: 300px;
+}
+
+.social-media figcaption {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+
+/* ---------------------------------------------
+                  CV Section
+  ---------------------------------------------- */
+
+aside {
+  margin: 50px 0;
+
+}
+
+aside li {
+  margin: 20px;
+}
