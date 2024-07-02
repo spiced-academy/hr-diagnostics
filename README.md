@@ -1,4 +1,4 @@
-# Willkommen zum Kurs Grundlagen des Webdevlopments
+# Willkommen zum Kurs Grundlagen des Webdevelopments
 
 ## Curriculum
 #### Tag 1: Computer Setup und Grundlagen Web:
