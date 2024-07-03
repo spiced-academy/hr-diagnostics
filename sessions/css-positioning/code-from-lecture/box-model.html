@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Box Model Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        margin: 0;
+        background-color: #f2f2f2;
+      }
+
+      .box {
+        width: 200px;
+        padding: 20px;
+        border: 10px solid #f39c12;
+        margin: 20px;
+        background-color: #3498db;
+        color: white;
+      }
+
+      .content {
+        background-color: #2980b9;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box Model Example</h1>
+    <div class="box">
+      <div class="content">Content</div>
+    </div>
+    <p>In the example above:</p>
+    <ul>
+      <li>The <strong>margin</strong> is the space outside the border (20px, transparent).</li>
+      <li>The <strong>border</strong> is the orange area (10px).</li>
+      <li>The <strong>padding</strong> is the space inside the border (20px).</li>
+      <li>The <strong>content</strong> is the blue box inside the padding (with an extra 10px padding).</li>
+    </ul>
+  </body>
+</html>
