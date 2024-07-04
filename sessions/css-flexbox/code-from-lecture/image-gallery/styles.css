@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;	
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	--stagger-delay: 100ms;
+}
+
+.box {
+	height: 50vh;
+	background-color: red;
+	color: white;
+	border: 10px solid black;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	background-position: center;
+	background-size: cover;
+	animation: cardEntrance 700ms ease-out;
+}
+/* :hover is a css pseudo class */
+.box:hover {
+	/* background-color: blue; */
+	flex: 3;
+	transition-duration: 1s;
+}
+
+.box:nth-of-type(1) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(1 * var(--stagger-delay));
+}
+
+.box:nth-of-type(2) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(2 * var(--stagger-delay));
+
+}
+
+.box:nth-of-type(3) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(3 * var(--stagger-delay));
+}
+
+.box:nth-of-type(4) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(4 * var(--stagger-delay));
+}
+
+.box:nth-of-type(5) {
+	background-image: url("https://images.unsplash.com/photo-1554457945-ba5df6648602?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+	animation-delay: calc(5 * var(--stagger-delay));
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed */
+@keyframes cardEntrance {
+	from {
+		opacity: 0;
+		transform: scale(0.0)
+	}
+	to {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
+
+/* media queries */
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column;
+	}	
+	.box {
+		width: 80vw;
+	}
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+	.box {
+		color: red
+	}
+}
